@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <Authors>SqliteSharpTeam</Authors>
+        <Product>SqliteSharp</Product>
+        <PackageId>SqliteSharp</PackageId>
+        <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
+        <Description>C# port of the stb_image.h</Description>
+        <PackageLicenseUrl>Public Domain</PackageLicenseUrl>
+        <PackageProjectUrl>https://github.com/rds1983/SqliteSharp</PackageProjectUrl>
+        <Version>2.27.7</Version>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Hebron\src\Hebron.Runtime\Hebron.Runtime.csproj"/>
+    </ItemGroup>
+</Project>
